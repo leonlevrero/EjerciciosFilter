@@ -9,6 +9,12 @@ const people = [
   { name: "Rose", lastname: "Albarado", age: 65 },
 ];
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  showList(people);
+});
+
 const showList = (arr) => {
   const container = document.getElementById("list");
   container.innerHTML = "";
@@ -17,6 +23,8 @@ const showList = (arr) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  showList(people);
-});
+document.getElementById("boton").addEventListener("click", () => {
+console.log
+showList(arr.filter(value => value.age >= 23));
+
+ });
